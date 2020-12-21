@@ -2,12 +2,12 @@ import React from 'react'
 
 const NavBar = () => {
     return (
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#">DoctorPortal</a>
+      <nav className="navbar navbar-expand-lg navbar-light ">
+        <div className="container-fluid">
+        <a className="navbar-brand text-white" href="/">DoctorPortal</a>
             
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -15,37 +15,37 @@ const NavBar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto  nav-menu">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto  nav-menu">
+              <li className="nav-item">
+                <a className="nav-link active text-white" aria-current="page" href="/">
                   Home
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  About
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/appointment">
+                 Appointment
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="#">
                   Dental Services
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="#">
                   Reviews
                 </a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link text-white" href="#">
+              <li className="nav-item ">
+                <a className="nav-link text-white" href="#">
                   Blog
                 </a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link text-white" href="#">
+              <li className="nav-item ">
+                <a className="nav-link text-white" href="#">
                   Contact Us
                 </a>
               </li>

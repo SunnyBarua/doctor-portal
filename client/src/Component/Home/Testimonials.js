@@ -28,10 +28,10 @@ const testimonialData = [
 
 const Testimonials = () => {
     return (
-       <section className="testimonials my-5 py-5">
+       <section className="testimonials my-5 mb-5 py-5">
            <div className="container">
                <div className="section-header">
-                   <h5 className="text-uppercase">Testimonial</h5>
+                   <h3 className="text-uppercase" style={{fontWeight:"800",color:"#1cc7c1"}}>Testimonial</h3>
                    <h1>What's Our Patients <br/> Says </h1>
                </div>
                

@@ -8,16 +8,26 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 }
+nav {
+  /* background-image: linear-gradient(75deg, #19d3ae, #0fcfec); */
+  background-color: #18bbb5;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-left: 6%;
+}
 .nav-menu {
   margin-left: auto !important;
   padding-left: 40%;
 }
-.navbar {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 .nav-link {
   margin-right: 10px;
+}
+.nav-item a {
+  text-transform: uppercase;
+  font-weight: 600;
 }
 .container-fluid {
   display: flex;
@@ -39,6 +49,7 @@ main {
   position: relative;
   background-image: url("images/chairBg.png");
   background-size: cover;
+  width: 100%;
 }
 .header-main-text {
   margin-top: 4%;
@@ -51,7 +62,7 @@ main {
   content: " ";
   position: absolute;
   top: 0;
-  width: 30%;
+  width: 25%;
   right: 0;
   background-color: #3a4256;
   z-index: -50;
@@ -103,7 +114,7 @@ main {
 .appointment-text {
   z-index: 100;
 }
-.appointment-text .text-primary {
+erver .appointment-text .text-primary {
   color: #1cc7c1 !important;
 }
 
@@ -199,4 +210,40 @@ main {
   background-color: transparent;
   text-transform: uppercase;
   font-weight: 600;
+}
+.dashboard {
+  background-color: #f4fdfb;
+  height: 100%;
+}
+.sidebar {
+  background-image: linear-gradient(40deg, #19d3ae, #0fcfec);
+  position: fixed;
+}
+.sidebar li {
+  margin-bottom: 2em;
+}
+.sidebar li:hover span {
+  display: inline-block;
+  transform: translate(5px);
+}
+.sidebar svg {
+  margin-right: 5px;
+}
+.appointment-container {
+  height: 600px;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgba(10, 25, 47, 0.9),
+    rgba(10, 25, 47, 1)
+  );
+  /* url(images/chairBg.png); */
+
+  background-size: cover;
+  width: 100%;
+  background-color: white;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #0fcfec !important;
 }
