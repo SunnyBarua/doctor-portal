@@ -44,7 +44,8 @@ const bookingData = [
         totalSpace: 10
     }
 ]
-const BookAppointment = ({date}) => {
+const BookAppointment = ({ date }) => {
+    
     return (
         <section>
             <h2 className="text-center text-brand mb-5">Available Appointment on {date.toDateString()}</h2>

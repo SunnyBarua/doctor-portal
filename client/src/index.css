@@ -189,7 +189,9 @@ erver .appointment-text .text-primary {
 .footer-area li {
   padding-bottom: 10px;
 }
-
+.doctor_mail_icon{
+  margin-right: 5px;
+}
 .social-media .icon {
   height: 40px;
   width: 40px;
@@ -246,4 +248,24 @@ erver .appointment-text .text-primary {
 .react-calendar__tile:enabled:hover,
 .react-calendar__tile:enabled:focus {
   background-color: #0fcfec !important;
+}
+.btn-brand{
+  margin-right: 15px;
+}
+@media screen and (max-width: 725px) {
+  .header-container::after {
+    display: none;
+  }
+  .header-main-text {
+    margin-top: 15%;
+    margin-left: 5%; 
+    width: 90%;
+    margin-bottom: 5%;
+}
+.col-md-6 img{
+  height: 300px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
 }

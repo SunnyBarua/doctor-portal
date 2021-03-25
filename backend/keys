@@ -1,0 +1,5 @@
+module.exports={
+    MONGOURI:
+    "mongodb+srv://sunnydev:oMoVc6eZd26PCddq@cluster0.zqek5.mongodb.net/doctorsPortal?retryWrites=true&w=majority",
+    JWT_SECRET: "ajdfgdsfrguyg346gjg",
+};

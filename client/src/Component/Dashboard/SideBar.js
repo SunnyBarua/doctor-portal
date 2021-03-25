@@ -6,6 +6,7 @@ import { faCog, faSignOutAlt, faCalendar, faHome, faGripHorizontal, faUserPlus, 
 import { faFileAlt } from '@fortawesome/free-regular-svg-icons'
 import { UserContext } from '../../App';
 
+
 const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [isDoctor, setIsDoctor] = useState(false);
@@ -33,14 +34,14 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faHome} /> <span>Home</span>
                     </Link>
                 </li>
-                {isDoctor && <div>
+                {!isDoctor && <div>
                     <li>
-                        <Link to="/allPatients" className="text-white">
+                        <Link to="/dashboard/appointments" className="text-white">
                             <FontAwesomeIcon icon={faCalendar} /> <span>Appointments</span>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/patient" className="text-white">
+                        <Link to="/dashboard/allPatients" className="text-white">
                             <FontAwesomeIcon icon={faUsers} /> <span>Patients</span>
                         </Link>
                     </li>
@@ -51,7 +52,9 @@ const Sidebar = () => {
                     </li>
                     <li>
                         <Link to="/addDoctor" className="text-white" >
-                            <FontAwesomeIcon icon={faUserPlus} /> <span>Add Doctor</span>
+                            <FontAwesomeIcon icon={faUserPlus} /> <span>
+                                AddDoctor
+                            </span>
                         </Link>
                     </li>
                     <li>

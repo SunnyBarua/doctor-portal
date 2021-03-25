@@ -1,58 +1,64 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 const NavBar = () => {
     return (
       <nav className="navbar navbar-expand-lg navbar-light ">
-        <div className="container-fluid">
-        <a className="navbar-brand text-white" href="/">DoctorPortal</a>
-            
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto  nav-menu">
-              <li className="nav-item">
-                <a className="nav-link active text-white" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="/appointment">
-                 Appointment
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="#">
-                  Dental Services
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white" href="#">
-                  Reviews
-                </a>
-              </li>
-              <li className="nav-item ">
-                <a className="nav-link text-white" href="#">
-                  Blog
-                </a>
-              </li>
-              <li className="nav-item ">
-                <a className="nav-link text-white" href="#">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </div>
+      <div className="container-fluid">
+      <a className="navbar-brand text-white" href="/">DoctorPortal</a>
+          
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto  nav-menu">
+            <li className="nav-item">
+              <a className="nav-link active text-white" aria-current="page" href="/">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-white" href="/appointment">
+               Appointment
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-white" href="/login">
+              Login
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-white" href="/dashboard">
+              Dashboard
+              </a>
+            </li>
+            <li className="nav-item ">
+              <a className="nav-link text-white" href="/dashboard">
+                Admin
+              </a>
+            </li>
+            <li className="nav-item ">
+              <a className="nav-link text-white" href="/blogs">
+               Blogs
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-white" href="/contact">
+                Contact Us
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
     );
 }
 

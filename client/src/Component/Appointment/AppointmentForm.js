@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
-
-
 import Modal from 'react-modal';
  
 const customStyles = {
@@ -18,15 +16,18 @@ const customStyles = {
 Modal.setAppElement('#root')
 
 function AppointmentForm({ modalIsOpen, closeModal,appointmentOn ,date}) {
-    const { register, handleSubmit, watch, errors } = useForm();
+    const { register, handleSubmit,  errors } = useForm();
     const onSubmit = data => {
+        console.log("I am from client ",data)
         data.service = appointmentOn;
-        data.date = date;
+        data.date=date;
+        console.log(data.date)
         data.created=new Date()
-        fetch("http://localhost:5000/addAppointment", {
+        fetch("http://localhost:4500/addAppointment", {
             method: "POST",
             headers: { "content-type": "application/json" },
-            body: JSON.stringify(data)
+            body: JSON.stringify(data),
+            
         })
             .then(res => res.json())
             .then(success => {
@@ -34,12 +35,9 @@ function AppointmentForm({ modalIsOpen, closeModal,appointmentOn ,date}) {
                     closeModal();
                     alert("Appointment created successfully")
             }
-        })
-        
+        })  
     }
-    
-    
-   
+     
     return (
       <div>
         <Modal
